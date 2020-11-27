@@ -27,16 +27,26 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          {
-            family: `Nunito`,
-            variants: [`400`],
-          },
+          `Avenir`,
+          `300,400,500,700` // you can also specify font weights and styles
         ],
-      },
+        display: 'swap'
+      }
     },
+    // {
+    //   resolve: `gatsby-plugin-prefetch-google-fonts`,
+    //   options: {
+    //     fonts: [
+    //       {
+    //         family: `Avenir`,
+    //         variants: [`400`, `500`, `700`],
+    //       },
+    //     ],
+    //   },
+    // },
     // {
     //   resolve: "gatsby-plugin-web-font-loader",
     //   options: {
