@@ -1,0 +1,29 @@
+nav.navbar.navbar-expand-lg.navbar-light {
+  #basic-navbar-nav {
+    .navbar-nav {
+      max-width: 1074px;
+      width: 100%;
+      justify-content: space-around;
+      align-content: space-evenly;
+
+      .dropdown.nav-item {
+        #basic-nav-dropdown {
+          color: #585858;
+        }
+      }
+
+      a {
+        color: #585858;
+
+        &:hover,
+        &[aria-current="page"] {
+          color: #000;
+        }
+      }
+    }
+  }
+
+  @media screen and (min-width: 992px) {
+    padding: 0;
+  }
+}

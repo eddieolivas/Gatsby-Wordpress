@@ -1,0 +1,60 @@
+@import "./src/shared/mixins/buttons";
+@import "./src/shared/mixins/background-image";
+.genericSection {
+  padding: 5em 0;
+  font-family: "Avenir", sans-serif;
+
+  .verticalCenter {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .mainBtn{
+    @include buttonMain()
+  }
+
+  .secondaryBtn {
+    @include buttonSecondary()
+  }
+}
+
+.breakSection {
+  background-color: #c5d9e7;
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
+.section1 {
+  padding: 81px 0;
+
+  .text {
+    padding: 35px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+  }
+}
+
+.lightBack {
+  background-color: #fbfbfb;
+}
+
+.contactSection {
+  padding: 150px 0;
+
+  .formContainer {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 50px;
+
+    h2 {
+      text-align: center;
+      color: #fff;
+      font-family: "Avenir", sans-serif;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+

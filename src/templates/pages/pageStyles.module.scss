@@ -1,0 +1,39 @@
+.sidebar {
+  padding-top: 5px;
+
+  p {
+    text-align: center;
+    font-family: "Avenir", sans-serif;
+    margin-bottom: 0;
+    font-size: 22px;
+  }
+
+  a {
+    color: #ddbba9;
+
+    &:hover {
+      color: #bd9269;
+    }
+  }
+}
+
+.pageContent {
+  font-family: "Avenir", sans-serif;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    clear: both;
+  }
+
+  a {
+    color: #ddbba9;
+
+    &:hover {
+      color: #bd9269;
+    }
+  }
+}

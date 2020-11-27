@@ -1,0 +1,26 @@
+@mixin siteBtn($color) {
+  background-color: $color;
+  border-color: $color #7f7f7f #7f7f7f $color;
+  border-width: 2px;
+  border-radius: 5px;
+  color: #242729;
+  font-family: "Avenir", sans-serif;
+  font-size: 20px;
+  padding: 10px 45px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: $color !important;
+    color: $color !important;
+    background-color: #fff !important;
+  }
+}
+
+@mixin buttonMain {
+  @include siteBtn(#ddbba9)
+}
+
+@mixin buttonSecondary {
+  @include siteBtn(#d1dca4)
+}

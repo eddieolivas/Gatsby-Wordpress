@@ -1,0 +1,46 @@
+@import "./src/shared/mixins/buttons";
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+
+  @media screen and (max-width: 991px) {
+    flex-flow: column;
+
+    > * {
+      padding: 10px 0;
+    }
+  }
+
+  .header-right {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Avenir", sans-serif;
+
+    span {
+      @media screen and (min-width: 451px) {
+        margin-right: 20px;
+      }
+
+      a {
+        color: #000;
+      }
+    }
+
+    .header-btn {
+      @include buttonMain();
+      font-size: 24px;
+      padding: 5px 20px;
+    }
+
+    @media screen and (max-width: 450px) {
+      flex-flow: column-reverse;
+
+      > * {
+        padding: 5px 0;
+      }
+    }
+  }
+}

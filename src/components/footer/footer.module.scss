@@ -1,0 +1,50 @@
+.footerTextContainer {
+  padding: 25px 0;
+
+  .footerText {
+    p {
+      margin-bottom: 0;
+      font-family: "Avenir", sans-serif;
+      color: #585858;
+    }
+  }
+
+  .footerIcons {
+    margin-right: 15px;
+  }
+
+  a {
+    color: #ddbba9;
+
+    &:hover {
+      color: #bd9269;
+    }
+  }
+
+  .footerNav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    a,
+    span {
+      color: #585858;
+      font-size: 18px;
+      font-family: "Avenir", sans-serif;
+    }
+  }
+}
+
+.footerCopyRight {
+  display: flex;
+  justify-content: center;
+  background-color: #bd9269;
+  color: #fff;
+  font-family: "Avenir", sans-serif;
+  padding: 15px 0;
+  font-size: 18px;
+
+  a {
+    color: #fff;
+  }
+}
