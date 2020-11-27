@@ -366,7 +366,19 @@ a:hover {
 }
 body.modal-open .modal-content {
   background-color: #ddbba9;
+  padding: 10px 20px;
 }
+
+body.modal-open .modal-content .modal-title {
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+body.modal-open .modal-content .modal-body h3 {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
